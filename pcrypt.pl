@@ -7,7 +7,7 @@
 #Settings (You probably shouldn't touch these)
 $version = "0.1a"; # Version
 @validc = ("aes-256-cbc", "bcrypt"); # Available Ciphers
-$numValidCiphers = $#ARGV + 1; # Number of Available Ciphers
+$numValidCiphers = $#validc + 1; # Number of Available Ciphers
 $cipher = $ARGV[1]; # Second argument is cipher (only used w/ -c)
 $selectedCipher = 0; # Default to having no custom cipher selected
 
